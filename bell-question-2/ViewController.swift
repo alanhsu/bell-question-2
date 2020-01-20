@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var lastModifiedDateLabel: UILabel!
-    
     var lastModifiedDateObserver: NSKeyValueObservation?
     let viewModel = MainViewControllerViewModel()
     
@@ -39,7 +37,9 @@ class ViewController: UIViewController {
         if let lastModifiedDate = dateFormatter.date(from: date) {
             dateFormatter.dateStyle = .full
             dateFormatter.timeStyle = .medium
-            self.lastModifiedDateLabel.text = dateFormatter.string(from: lastModifiedDate)
+            let alert = UIAlertController(title: "Last Modified Date Time", message: dateFormatter.string(from: lastModifiedDate), preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
         }
     }
 }

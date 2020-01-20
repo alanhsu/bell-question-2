@@ -25,25 +25,14 @@
                                     <action selector="fetchButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JwE-AW-1lg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuW-lP-a3b">
-                                <rect key="frame" x="187.5" y="368.5" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1cC-Tw-RRv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="57Q-yW-Bmr"/>
-                            <constraint firstItem="ZuW-lP-a3b" firstAttribute="centerX" secondItem="1cC-Tw-RRv" secondAttribute="centerX" id="CE3-GL-ggM"/>
                             <constraint firstItem="1cC-Tw-RRv" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="JK7-in-VAx"/>
-                            <constraint firstItem="ZuW-lP-a3b" firstAttribute="top" secondItem="1cC-Tw-RRv" secondAttribute="bottom" constant="10" id="Ndz-lX-mlb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="lastModifiedDateLabel" destination="ZuW-lP-a3b" id="9Cs-A7-8h9"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
